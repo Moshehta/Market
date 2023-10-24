@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main_color: #7b5244;
+  --sub_color: #333;
+}
+header {
+  padding: 50px 0 20px 0;
+}
+.header_container {
+  width: 80%;
+  margin: auto;
+}
+.header_content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.head_logo img {
+  flex: 1;
+  max-width: 150px;
+}
+nav {
+  flex: 3;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+}
+.dropdown {
+  position: relative;
+}
+nav ul li a {
+  padding: 10px 19px;
+  display: block;
+  font-weight: bold;
+  font-size: large;
+  text-decoration: none;
+  color: var(--main_color);
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+nav ul li:hover a {
+  animation-name: bor;
+}
+@keyframes bor {
+  0% {
+    border-right: 2px solid var(--main_color);
+    border-left: 2px solid var(--main_color);
+  }
+  100% {
+    border-right: 2px solid var(--main_color);
+    border-left: 2px solid var(--main_color);
+    border-top: 2px solid var(--main_color);
+    border-bottom: 2px solid var(--main_color);
+  }
+}
+/* ************************************* */
+.table {
+  margin-top: 5px;
+  position: absolute;
+  display: none;
+  width: 350%;
+  border: 2px solid var(--main_color);
+  color: var(--main_color);
+  background-color: #fff;
+}
+.table th,
+.table td {
+  padding: 5px 40px 10px 10px;
+}
+.table thead th {
+  border-bottom: 0.5px dashed var(--main_color);
+}
+.dropdown:hover .table {
+  display: block;
+}
+
+header .head-icons {
+  flex: 1;
+  text-align: right;
+}
+header .head-icons ul {
+  list-style: none;
+}
+header .head-icons ul li {
+  display: inline-block;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.fa-cart-plus {
+  margin-right: 10px;
+}

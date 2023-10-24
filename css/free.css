@@ -1,0 +1,109 @@
+:root {
+  --main_color: #7b5244;
+  --sub_color: #333;
+}
+.free {
+  margin: 100px 0 100px;
+}
+.free_container {
+  width: 75%;
+  margin: auto;
+}
+.free_content {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-column-gap: 10px;
+}
+.a1 {
+  text-align: center;
+  position: relative;
+  height: 100px;
+}
+.a {
+  border-right: 2px solid var(--main_color);
+}
+/* ************************************ */
+.a1 .front {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  background-image: url(../imgs/service-icon_11.png);
+  background-size: cover;
+  transition: all 0.5s;
+  opacity: 1;
+  position: absolute;
+  background-position: center;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+}
+.a1 .back {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  background-image: url(../imgs/service-icon_12.png);
+  background-size: cover;
+  margin-bottom: 5px;
+  transition: all 0.5s;
+  display: none;
+  position: absolute;
+  background-position: center;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.x2 .front {
+  background-image: url(../imgs/service-icon_21.png);
+}
+.x2 .back {
+  background-image: url(../imgs/service-icon_22.png);
+}
+.x3 .front {
+  background-image: url(../imgs/service-icon_31.png);
+}
+.x3 .back {
+  background-image: url(../imgs/service-icon_32.png);
+}
+.x4 .front {
+  background-image: url(../imgs/service-icon_41.png);
+}
+.x4 .back {
+  background-image: url(../imgs/service-icon_42.png);
+}
+.x5 .front {
+  background-image: url(../imgs/service-icon_51.png);
+}
+.x5 .back {
+  background-image: url(../imgs/service-icon_52.png);
+}
+.a1 h3 {
+  font-size: 20px;
+  position: absolute;
+  padding: 20px 0;
+  top: 30%;
+  left: 20%;
+}
+.a1 h4 {
+  color: rgb(179, 179, 179);
+  font-weight: lighter;
+  position: absolute;
+  padding: 20px 0 0;
+  top: 55%;
+}
+.a1:hover .front {
+  transform: translate(-25px, -100px);
+  opacity: 0;
+}
+
+.a1:hover .back {
+  transition: all 0.5s;
+  transform: translate(-25px, -90px);
+  display: block;
+}
+
+.free .line {
+  width: 80%;
+  margin: auto;
+  height: 2px;
+  background-color: #333;
+}
